@@ -27,6 +27,20 @@
                     }
                 }
             }
+        },
+        {
+            "id": "relay",
+            "model": "RELAY-1C",
+            "driver": "relay-1c",
+            "inputs": {
+                "gpio": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out",
+                        "level": "high"
+                    }
+                }
+            }
         }
     ]
 }

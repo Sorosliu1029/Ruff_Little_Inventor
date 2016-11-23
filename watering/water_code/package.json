@@ -11,7 +11,8 @@
         },
         "dependencies": {
             "soil-moisture-sensor": "*",
-            "ssd1306": "^2.1.0"
+            "ssd1306": "^2.1.0",
+            "relay-1c": "^2.0.4"
         }
     }
 }
