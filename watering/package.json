@@ -12,7 +12,9 @@
         "dependencies": {
             "soil-moisture-sensor": "*",
             "ssd1306": "^2.1.0",
-            "relay-1c": "^2.0.4"
-        }
+            "relay-1c": "^2.0.4",
+            "ruff-mbd-v1": "^4.2.0"
+        },
+        "devDependencies": {}
     }
 }
