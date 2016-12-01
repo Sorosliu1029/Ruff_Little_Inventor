@@ -12,6 +12,19 @@
                     }
                 }
             }
+        },
+        {
+            "id": "oled",
+            "model": "SSD1306",
+            "driver": "ssd1306",
+            "inputs": {
+                "i2c": {
+                    "type": "i2c",
+                    "args": {
+                        "address": 60
+                    }
+                }
+            }
         }
     ]
 }
