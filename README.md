@@ -6,3 +6,4 @@ Including:
 
 - Auto watering
 - Umbrella compass
+- Wind meter
