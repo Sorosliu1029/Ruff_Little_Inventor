@@ -5,3 +5,4 @@
 Including:
 
 - Auto watering
+- Umbrella compass
