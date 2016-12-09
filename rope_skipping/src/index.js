@@ -16,16 +16,20 @@ $.ready(function (error) {
     controller = $('#controller');
     button = $('#button');
     button.on('push', function () {
+        console.log('button pushed');
         if (status === 0) {
             controller.forwardRotateA(0.5);
+            controller.forwardRotateB(0.5);
         } else {
             controller.stopRotateA();
+            controller.stopRotateB();
         }
         status ^= 1;
     })
 });
 
 $.end(function () {
-    $('#led-g').turnOff();
     controller.stopRotateA();
+    controller.stopRotateB();
+    $('#led-g').turnOff();
 });
