@@ -1,6 +1,10 @@
 'use strict';
 // motor controller
 var controller;
+// button to controll
+var button;
+// motor status indicator
+var status = 0;
 
 $.ready(function (error) {
     if (error) {
@@ -10,8 +14,15 @@ $.ready(function (error) {
 
     $('#led-g').turnOn();
     controller = $('#controller');
-    console.log('here we get controller', controller);
-    controller.forwardRotateA(0.5);
+    button = $('#button');
+    button.on('push', function () {
+        if (status === 0) {
+            controller.forwardRotateA(0.5);
+        } else {
+            controller.stopRotateA();
+        }
+        status ^= 1;
+    })
 });
 
 $.end(function () {
